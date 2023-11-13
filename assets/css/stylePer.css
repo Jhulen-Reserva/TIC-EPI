@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.semaforo {
+    height: 350px;
+    background-color: #333; /* Color de fondo de la cubierta */
+    border-radius: 15px; /* Bordes redondeados de la cubierta */
+    padding: 10px; /* Espacio interno de la cubierta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la cubierta */
+    position: fixed;
+    right: 200px;
+    top: 350px;
+}
+
+.luz {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.roja {
+    background-color: red;
+}
+
+.amarilla {
+    background-color: yellow;
+}
+
+.verde {
+    background-color: #00ff08;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cambiamos el color de fondo al pasar el ratón */
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+}
+
+.texto {
+    font-size: 50px;
+    position: fixed;
+    z-index: 10;
+    width: 600px;
+    height: 200px;
+    top: 100px;
+    right: 50px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+      transform: scale(0.25);
+      transform-origin: top left;
+      width: 400%; /* Compensar la reducción del tamaño */
+      height: 400%; /* Compensar la reducción del tamaño */
+      overflow: hidden; /* Evitar desbordamiento */
+    }
+    .semaforo {
+        height: 820px;
+        width: 300px;
+        background-color: #333; /* Color de fondo de la cubierta */
+        border-radius: 15px; /* Bordes redondeados de la cubierta */
+        padding: 25px; /* Espacio interno de la cubierta */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la cubierta */
+        position: fixed;
+        right: 150px;
+        top: 800px;
+    }
+    .luz {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .texto {
+        font-size: 100px;
+        position: fixed;
+        z-index: 10;
+        width: 90%;
+        height: 450px;
+        top: 2150px;
+        left: 50px;
+    }
+  }

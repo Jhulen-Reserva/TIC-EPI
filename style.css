@@ -1,0 +1,52 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.semaforo {
+    display: flex;
+    flex-direction: column;
+    width: 120px; /* Aumentamos el ancho para acomodar la cubierta */
+    background-color: #333; /* Color de fondo de la cubierta */
+    border-radius: 15px; /* Bordes redondeados de la cubierta */
+    padding: 10px; /* Espacio interno de la cubierta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la cubierta */
+}
+
+.luz {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.roja {
+    background-color: red;
+}
+
+.amarilla {
+    background-color: yellow;
+}
+
+.verde {
+    background-color: green;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cambiamos el color de fondo al pasar el ratón */
+}
