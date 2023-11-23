@@ -783,9 +783,23 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.jpg") center center no-repeat;
-  background-size: cover;
+  background: url("https://img.youtube.com/vi/KLwtA0xRHsc/maxresdefault.jpg") center center no-repeat;
+  background-size: contain;
   min-height: 500px;
+}
+
+.about .video-box1 {
+  background: url("../img/video1.png") center center no-repeat;
+  background-size: contain;
+  min-height: 500px;
+  padding: 10px !important;
+}
+
+.about .video-box2 {
+  background: url("../img/video2.png") center center no-repeat;
+  background-size: contain;
+  min-height: 500px;
+  padding: 10px;
 }
 
 .about .play-btn {
